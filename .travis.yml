@@ -5,6 +5,7 @@ rvm:
 before_install: gem install bundler -v 1.16.2
 deploy:
   provider: rubygems
+  gem: getto-initialize_with
   on:
     tags: true
   api_key:
