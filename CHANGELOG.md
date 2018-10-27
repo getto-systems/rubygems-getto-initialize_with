@@ -1,3 +1,7 @@
+# Version : 1.0.0
+
+version: 1.0.0
+
 # Version : 0.5.0
 
 test: deploy rubygems by travisci
