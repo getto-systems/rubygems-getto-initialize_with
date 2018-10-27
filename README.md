@@ -78,7 +78,10 @@ end
 
 ### Errors
 
-raise error when missing argument, or unknown argument, object not satisfied signature or type check failed
+- missing argument
+- unknown argument
+- type check failed
+- object not satisfied signature
 
 ```ruby
 # raise "argument missing" becouse missing `repository`
@@ -87,11 +90,11 @@ my_class = MyClass.new(time: :now, expire: 10)
 # raise "unknown argument" because including `unknown`
 my_class = MyClass.new(time: :now, expire: 10, repository: Repository.new, unknown: :argument)
 
-# raise "argument type error" because `repository` is not respond to [:account_exists?]
-my_class = MyClass.new(time: :now, expire: 10, repository: Object.new)
-
 # raise "argument type error" because `expire` is not a Integer
 my_class = MyClass.new(time: :now, expire: "10", repository: Repository.new)
+
+# raise "argument type error" because `repository` is not respond to [:account_exists?]
+my_class = MyClass.new(time: :now, expire: 10, repository: Object.new)
 ```
 
 
