@@ -4,6 +4,9 @@ cache: bundler
 rvm:
   - 2.5.1
 before_install: gem install bundler -v 1.16.2
+notifications:
+  slack:
+    secure: "iKoW31B15AOmHpz9oI+7tfGwQhZBDhrcGU0tigkmuisK8cxCQu409UPA6AAjL+VHMh1n74STqDpCD1BP+5i83PSk8caPqowZGqwMjUyYinvT20AC9oV7xyg/wWv95aeLmczOEZqPKTnS+otF6gysq/P7b6F5/g6hCegS+q3/DRHIb6DIIlg7+YKnNGwxQeI3QhP1UvIl3Hf5GxcDiQYO/O9yHKToXF6FJvZTaEPm98WmnJtcrs60ou5D/RpPiyy4gpacMvs7aQknya6PbdHtCuaKXBHibXHhCQrvzeBc5ccG3DcjzzLVVMHvPKQLT4NS8wMwDPcIhOSsXKK/aSm2WIh5i+lIPGAvMLTQqTryWjcgygxPqNa2PLIdN/z2bhTJ8tmtwGZ3lOScN9SjEK1o8PpmslEgKsoJiUYiMHFy+akc6xpcoR/QD8T2nWPTj7fMOzf9UZO8eS6XJ5f2faQ87CbD1v9FTm0oJrJew10uAC3jxevx7J/8sfNcR2VF+cKSZ4R3hc00Xh/Qcrk8iv/77d8jkxXtYkbZkYCftWTGdQk/13UHI/uwaDB1YDKDz1GkPYQK5YVkAzdRy9mnhgkf1WXJDyIRieswgyeSBzmvyuPZWPWMmNEOGg5aG57DbLTLLPnda1euL5iOTQrYV1FnNBXSClJ6DzG6s5c9wQRAW84="
 deploy:
   provider: rubygems
   gem: getto-initialize_with
