@@ -12,7 +12,7 @@ Gem::Specification.new do |spec|
 
   spec.summary       = %q{initialize_with helper}
   spec.description   = %q{Define initialize method that require specific parameters}
-  spec.homepage      = "https://github.com/getto-systems/getto-initialize_with"
+  spec.homepage      = "https://github.com/getto-systems/rubygems-getto-initialize_with"
   spec.license       = "MIT"
 
   # Specify which files should be added to the gem when it is released.
