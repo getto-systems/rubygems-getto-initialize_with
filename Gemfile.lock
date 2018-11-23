@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    getto-initialize_with (1.0.4)
+    getto-initialize_with (1.0.5)
 
 GEM
   remote: https://rubygems.org/
