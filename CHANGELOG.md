@@ -1,3 +1,7 @@
+# Version : 1.0.5
+
+fix: gitlab-ci
+
 # Version : 1.0.4
 
 patch version
