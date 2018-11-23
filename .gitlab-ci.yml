@@ -7,6 +7,14 @@ cache:
 test:
   except:
     - tags
+    - master
+    - release
   script:
     - bundle
     - bundle exec rake
+
+release:
+  only:
+    - release@getto-systems-labo/rubygems-initialize_with
+  script:
+    - ./bin/push_tags.sh
